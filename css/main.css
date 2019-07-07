@@ -129,6 +129,7 @@ header nav ul li a{
 	width:100%;
 	height: auto;
 	border-top: .06em solid #eee;
+	border-bottom: .06em solid #eee;
 }
 
 .section-two {
@@ -180,73 +181,29 @@ footer span {
 /********BREAKPOINTS*********/
 @media all and (min-width:768px) {
 	.bottom-section{
+		border-top: .06em solid #eee;
+		border-bottom: .06em solid #eee;
 		display: flex;
 		justify-content: center;
 		align-items:center;
-		flex-flow: column wrap;
+		flex-flow:row nowrap;
 	  width:100%;
 	}
-	.main-image {
-		height: auto;
-
-	}
-	.main-image img {
-		width: 100%;
-		border-bottom: .19em solid #77a466;
-	}
-
-	.main-title {
-		height: auto;
-
-	}
-	.main-title h3 {
-		text-align: left;
-		color: #77a466;
-	}
-	.main-title p {
-		font-size: 1em;
-		line-height: 1.56em;
-	}
-
 	.section-one,
 	.section-two,
 	.section-three {
 		width:100%;
 		height: auto;
-		border-top: .06em solid #eee;
 	}
-
-	.section-one h4 {
-		text-align: center;
+	.section-one {
+		border:none;
 	}
-
 	.section-two {
-		border-left: .06em solid #eee;
-		border-right: .06em solid #eee;
+		border-top: none;
+		border-bottom: none;
 	}
-	.section-one h4,
-	.section-two h4,
-	.section-three h4 {
-		text-align: center;
-	}
-	.menu {
-		list-style: none;
-		text-align: center;
-	}
-	.menu li {
-		color:#77a466;
-	}
-
-	.reviews {
-		color: #333;
-		font-size: 1em;
-		line-height: 1.313em;
-	}
-
-	.address {
-		font-size: 1em;
-		line-height: 1.5em;
-		text-align: center;
+	.section-three {
+		border: none;
 	}
 
 }
